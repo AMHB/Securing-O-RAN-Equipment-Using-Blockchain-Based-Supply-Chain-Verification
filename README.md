@@ -1,5 +1,5 @@
 ## 
-# Blockchain-Based Supply Chain Verification for O-RAN Equipment
+# Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification
 
 This repository contains the Python implementation of the IEEE paper "Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification". The simulation aims to replicate the performance and security results presented in the paper, demonstrating the effectiveness of blockchain technology for securing the Open Radio Access Network (O-RAN) supply chain.
 
