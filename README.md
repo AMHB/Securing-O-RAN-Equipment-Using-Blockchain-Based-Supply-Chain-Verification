@@ -1,9 +1,7 @@
 ````markdown
 # Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification
 
-This repository contains the Python implementation of the **IEEE IWCMC 2025** paper  
-**“Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification”**  
-(<https://ieeexplore.ieee.org/document/11059692>). The simulation recreates the performance and security results presented in the paper, showing how blockchain technology can safeguard the Open Radio Access Network (O-RAN) supply chain.
+This repository contains the Python implementation of the **IEEE IWCMC 2025** paper **“Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification”** (<https://ieeexplore.ieee.org/document/11059692>). The simulation reproduces the performance and security results presented in the paper, demonstrating the effectiveness of blockchain technology for protecting the Open Radio Access Network (O-RAN) supply chain.
 
 ---
 
@@ -12,12 +10,14 @@ The Open Radio Access Network (O-RAN) architecture has enabled the integration o
 ---
 
 ## Implementation Overview
-* **Quorum Blockchain Simulation** – permissioned network with IBFT 2.0 consensus  
-* **Cryptographic Firmware Authentication** – hardware-security-module–style verification  
-* **Smart Contract Simulation** – `EquipmentRegistry` & `IntegrationVerifier` contracts  
-* **Network Topology** – manufacturers, integrators, and operators in a multi-vendor setting  
-* **Performance Testing** – TPS, verification latency, consensus finality, etc.  
-* **Security Validation** – firmware tampering, Sybil, and replay-attack scenarios  
+This Python implementation mirrors the system described in the paper and includes:
+
+1. **Quorum Blockchain Simulation** — permissioned network with IBFT 2.0 consensus  
+2. **Cryptographic Firmware Authentication** — hardware-security-module–style verification  
+3. **Smart Contract Simulation** — `EquipmentRegistry` and `IntegrationVerifier` contracts  
+4. **Network Topology** — manufacturers, integrators, and operators in a multi-vendor setting  
+5. **Performance Testing** — TPS, verification latency, consensus finality, etc.  
+6. **Security Validation** — firmware tampering, Sybil, and replay-attack scenarios  
 
 ---
 
@@ -29,25 +29,28 @@ The Open Radio Access Network (O-RAN) architecture has enabled the integration o
 
 ---
 
-## Installation & Usage
+## Installation
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/oran-blockchain-verification.git
 cd oran-blockchain-verification
 
-# (Optional) Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate          # Windows: venv\Scripts\activate
+source venv/bin/activate        # Windows: venv\Scripts\activate
 
-# Install dependencies
 pip install -r requirements.txt
+````
 
-# Run the full simulation
+---
+
+## Usage
+
+```bash
+# Full simulation
 python run_simulation.py
 
-# Or explore via Jupyter Notebook
+# Or open the notebook
 jupyter notebook oran_blockchain_simulation.ipynb
-````
+```
 
 ---
 
@@ -64,12 +67,12 @@ jupyter notebook oran_blockchain_simulation.ipynb
 
 ## Results
 
-| Metric                     | 100 Nodes | 500 Nodes |
-| -------------------------- | --------- | --------- |
-| **Transaction Throughput** | 248 TPS   | 195 TPS   |
-| **Verification Latency**   | 320 ms    | 620 ms    |
-| **Consensus Finality**     | 1.2 s     | 2.5 s     |
-| **Firmware-Tampering FNR** | 1.8 %     | —         |
+| Metric                 | 100 Nodes   | 500 Nodes   |
+| ---------------------- | ----------- | ----------- |
+| Transaction Throughput | **248 TPS** | **195 TPS** |
+| Verification Latency   | **320 ms**  | **620 ms**  |
+| Consensus Finality     | **1.2 s**   | **2.5 s**   |
+| Firmware-Tampering FNR | **1.8 %**   | —           |
 
 These results confirm that the blockchain-based framework secures O-RAN supply chains while maintaining near-real-time performance.
 
@@ -79,8 +82,8 @@ These results confirm that the blockchain-based framework secures O-RAN supply c
 
 ```
 oran-blockchain-verification/
-├── oran_blockchain_simulation.ipynb
-├── run_simulation.py
+├── oran_blockchain_simulation.ipynb      # Main Jupyter notebook
+├── run_simulation.py                     # Stand-alone script
 ├── simulation/
 │   ├── blockchain.py
 │   ├── firmware.py
@@ -118,17 +121,17 @@ oran-blockchain-verification/
 ## Key Findings
 
 1. **248 TPS** at 100 nodes demonstrates high throughput for permissioned chains.
-2. Firmware-verification latency stays below **500 ms** up to \~300 nodes, enabling near-real-time validation.
+2. Firmware-verification latency remains **< 500 ms** up to \~300 nodes, enabling near-real-time validation.
 3. Tampered-firmware detection achieves a **1.8 %** false-negative rate.
 4. IBFT 2.0 consensus overhead becomes significant beyond \~500 nodes.
-5. Quorum outperforms public Ethereum by **≈ 4.6× TPS** for this workload.
-6. Quorum’s ledger is **≈ 40 % smaller** than Ethereum’s for equivalent data.
+5. Quorum outperforms public Ethereum by **\~4.6× TPS** for this workload.
+6. Quorum’s ledger is **\~40 % smaller** than Ethereum’s for equivalent data.
 
 ---
 
 ## License
 
-Released under the **MIT License**. See the `LICENSE` file for details.
+This project is released under the **MIT License**. See the `LICENSE` file for details.
 
 ---
 
@@ -138,4 +141,9 @@ Released under the **MIT License**. See the `LICENSE` file for details.
 * O-RAN Alliance for promoting open standards
 * Blockchain and security research community
 
+---
 
+*Implementation by Ali Mehrban et al. Provided for research and educational use; production deployments require additional security hardening and optimization.*
+
+```
+```
