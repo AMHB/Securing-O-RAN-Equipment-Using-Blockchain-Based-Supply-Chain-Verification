@@ -5,7 +5,7 @@ This repository contains the Python implementation of the **IEEE IWCMC 2025** pa
 
 ---
 
-## Paper Abstract
+# Paper Abstract
 The Open Radio Access Network (O-RAN) architecture has enabled the integration of multi-vendor equipment, yielding a significant enhancement in the flexibility and interoperability of telecommunications networks. However, this openness has also introduced new security vulnerabilities, particularly in supply chain integrity. Malicious actors may exploit weaknesses at various stages of production, distribution, or integration, leading to critical threats such as data tampering, unauthorized access, and denial-of-service (DOS) attacks. To address these challenges, this paper proposes a novel blockchain-based framework designed to secure the O-RAN supply chain. The proposed solution leverages a private permissioned blockchain ledger and cryptographic firmware authentication to ensure the integrity and authenticity of network equipment throughout its lifecycle. Specifically, the framework consists of: (1) a decentralized architecture integrating blockchain network components, equipment node validators, and secure firmware authentication mechanisms; and (2) a consensus-based verification model to enhance trust and transparency within the supply chain. To the best of our knowledge, this is one of the first approaches to use blockchain for O-RAN supply chain security, and also addressing emerging security threats in a scalable and tamper-resistant manner. Experimental validation and security assessments demonstrate the effectiveness of the proposed framework in mitigating supply chain risks, making it a promising solution for ensuring trust and robustness in next-generation O-RAN ecosystems.
 ---
 
@@ -145,5 +145,4 @@ This project is released under the **MIT License**. See the `LICENSE` file for d
 
 *Implementation by Ali Mehrban et al. Provided for research and educational use; production deployments require additional security hardening and optimization.*
 
-```
-```
+
