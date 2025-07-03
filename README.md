@@ -1,4 +1,4 @@
-````markdown
+
 # Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification
 
 This repository contains the Python implementation of the **IEEE IWCMC 2025** paper **“Securing O-RAN Equipment Using Blockchain-Based Supply Chain Verification”** (<https://ieeexplore.ieee.org/document/11059692>). The simulation reproduces the performance and security results presented in the paper, demonstrating the effectiveness of blockchain technology for protecting the Open Radio Access Network (O-RAN) supply chain.
